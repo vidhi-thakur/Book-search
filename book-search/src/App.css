@@ -73,5 +73,6 @@
 @media screen and (max-width: 1300px) {
     .body {
         width: 100%;
+        justify-content: center;
     }
 }
