@@ -13,21 +13,16 @@ function App() {
 
     if (!input) {
       setData(books)
+      return;
     }
     const fuse = new Fuse(data, {
       keys: ["title", "author"]
     });
 
-    console.log("fuse value >>>> ", fuse.keys)
-
     let result = fuse.search(input);
     const match = [];
-
-    console.log("input value >>>> " + input)
-    console.log("result value >>>> " + result)
-
     if (!result.length) {
-      setData(books)
+      setData([])
     } else {
       result.forEach(({ item }) => {
         match.push(item)
