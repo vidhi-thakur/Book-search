@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.app {
+    background-color: #E5E7EB;
+    min-height: 100vh;
+}
+
+/*header*/
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0px;
+}
+
+.header__title {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.header__searchfield {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    border-bottom: 1px solid gray;
+}
+
+.header__searchInput {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 0.3rem;
+    margin-inline-start: 0.3rem;
+    background-color: #E5E7EB;
+}
+
+@media screen and (max-width: 1300px) {
+    .header__title, .header__searchfield {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .header__title, .header__searchfield {
+        width: 90%;
+    }
+}
+
+/*body*/
+
+.body{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-top: 5rem;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1300px) {
+    .body {
+        width: 100%;
+    }
+}
