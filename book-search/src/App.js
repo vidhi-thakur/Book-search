@@ -47,7 +47,7 @@ function App() {
       {/* body */}
       <div className="body">
         {
-          data.map((item) => (
+          datasearch.map((item) => (
             <BookCard {...item} key={item.title} />
           ))
         }
